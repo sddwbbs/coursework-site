@@ -17,6 +17,13 @@
     align-items: flex-start;
 }
 
+.content__animation {
+    height: 500px;
+    width: 500px;
+    display: block; 
+    margin: 0 auto;
+}
+
 .content__logo {
     display: block; 
     margin: 0 auto;

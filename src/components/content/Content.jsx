@@ -1,20 +1,23 @@
 import React from 'react';
-import Lottie from 'react-lottie'; 
+// import Lottie from 'lottie-react';
+import { useLottie } from "lottie-react";
 import './Content.css';
 import animationData from '../../assets/web-designer-with-idea.json'; 
 import firstLogo from '../../assets/smartmontools.png';
 
 function Content({ toggle }) {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
+
+  const options = {
     animationData: animationData,
+    loop: true,
   };
+
+  const { View } = useLottie(options);
 
   return (
     <div className="container">
         <div className={toggle === 0 ? "content__show" : "content"}>
-            <Lottie options={defaultOptions} height={540} width={550} />
+          <div className="content__animation"><>{View}</></div>
         </div>
         <div className={toggle === 1 ? "content__show" : "content"}>
         <img className="content__logo" src={firstLogo} width="250px" alt="firstLogo" />
