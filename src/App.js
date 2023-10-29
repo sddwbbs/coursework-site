@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header/Header'
+import Menu from './components/menu/Menu'
+import Content from './components/content/Content'
+import { useState } from 'react';
 
 function App() {
+
+  const [toggle, setToggle] = useState(1);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function updateToggle(id) {
+    setToggle(id);
+  }
+
+  function handleRightImageClick() {
+    setIsMenuOpen(!isMenuOpen);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header onLeftImageClick={updateToggle} onRightImageClick={handleRightImageClick} />
+      <div className={`menuBackdrop ${isMenuOpen ? 'active' : ''}`}></div>
+      <Menu isOpen={isMenuOpen} onClose={handleRightImageClick} />
+      <Content toggle={toggle} />
     </div>
   );
 }
