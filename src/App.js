@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <Header onLeftImageClick={updateToggle} onRightImageClick={handleRightImageClick} />
       <div className={`menuBackdrop ${isMenuOpen ? 'active' : ''}`}></div>
-      <Menu isOpen={isMenuOpen} onClose={handleRightImageClick} />
+      <Menu isOpen={isMenuOpen} onClose={handleRightImageClick} onSubitemClicked={updateToggle} />
       <Content toggle={toggle} />
     </div>
   );

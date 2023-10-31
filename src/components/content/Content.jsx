@@ -1,5 +1,4 @@
 import React from 'react';
-// import Lottie from 'lottie-react';
 import { useLottie } from "lottie-react";
 import './Content.css';
 import animationData from '../../assets/web-designer-with-idea.json'; 
@@ -30,7 +29,7 @@ function Content({ toggle }) {
         </p>
         </div>
         <div className={toggle === 2 ? "content__show" : "content"}>
-            
+          
         </div>
         <div className={toggle === 3 ? "content__show" : "content"}>
             
