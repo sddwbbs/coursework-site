@@ -3,10 +3,9 @@ import './Menu.css'
 function Menu({ isOpen, onClose, onSubitemClicked }) {
     const menuStyles = {
       width: isOpen ? '30%' : 0,
-      top: '10%',
-      bottom: '5%',
-      right: '-15px',
     };
+
+    // <div className={toggle === 0 ? "content__show" : "content"}></div>
 
     const handleSubitemClick = (itemId) => {
       onClose();
@@ -14,7 +13,8 @@ function Menu({ isOpen, onClose, onSubitemClicked }) {
     };
   
     return (
-      <div className="menu" style={menuStyles}>
+      // <div className="menu" style={menuStyles}>
+      <div className={isOpen ? "menu__show" : "menu"}>
         <button className="menu__btn" onClick={onClose}> × </button>
         <div className="menu__content">
             <ul className="menu__list">
