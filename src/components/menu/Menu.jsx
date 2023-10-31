@@ -1,11 +1,6 @@
 import './Menu.css'
 
 function Menu({ isOpen, onClose, onSubitemClicked }) {
-    const menuStyles = {
-      width: isOpen ? '30%' : 0,
-    };
-
-    // <div className={toggle === 0 ? "content__show" : "content"}></div>
 
     const handleSubitemClick = (itemId) => {
       onClose();
@@ -13,7 +8,6 @@ function Menu({ isOpen, onClose, onSubitemClicked }) {
     };
   
     return (
-      // <div className="menu" style={menuStyles}>
       <div className={isOpen ? "menu__show" : "menu"}>
         <button className="menu__btn" onClick={onClose}> × </button>
         <div className="menu__content">
