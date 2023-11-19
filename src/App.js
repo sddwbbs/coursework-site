@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const [toggle, setToggle] = useState(1);
+  const [toggle, setToggle] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function updateToggle(id) {

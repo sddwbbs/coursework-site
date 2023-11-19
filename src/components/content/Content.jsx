@@ -36,13 +36,21 @@ function Content({ toggle }) {
         <div className={toggle === 1 ? "content__show" : "content"}>
         <img className="content__logo" src={firstLogo} width="250px" alt="firstLogo" />
         <h1 className="content__header">Smartmontools</h1>
+        <p style={{ marginBottom: "10px", color: "#A0F9D3", fontSize: "17px"}}>
+        Производитель: 
+        <span style={{ color: "#DFF7ED"}}> Cообщество разработчиков. Проект является открытым исходным кодом.</span>
+        </p>
+        <p style={{ marginBottom: "50px", color: "#A0F9D3", fontSize: "17px"}}>
+        Сайт: 
+        <a style={{ color: "#DFF7ED" }} href="https://www.smartmontools.org" target="_blank" rel="noopener noreferrer"> https://www.smartmontools.org</a>
+        </p>  
         <p style={{ marginBottom: "20px"}}>
         Smartmontools - это набор командных инструментов для мониторинга и управления
         данными Self-Monitoring, Analysis and Reporting Technology (SMART) на ваших жестких дисках
         и твердотельных накопителях. Эти инструменты позволяют вам проверить состояние и работоспособность
         ваших накопителей и предоставляют информацию о состоянии жестких дисков и накопителей SSD.
         </p>
-        <p style={{ marginBottom: "10px", fontWeight: "600", fontSize: "21px"}}> 
+        <p style={{ marginBottom: "10px", fontWeight: "600", fontSize: "21px", color: "#DFECB2"}}> 
         Чтение атрибутов S.M.A.R.T. вашего жёсткого диска:
         </p>
         <img className="content__img" src={smartmontools_1_img} width="550px" alt="Img" />
@@ -64,7 +72,7 @@ function Content({ toggle }) {
           <li>14. Состояние контроллера, такие как температура и поддерживаемые энергосостояния.</li>
         </ul>
         <p style={{ marginBottom: "20px"}}>Общий результат самодиагностики S.M.A.R.T. - "PASSED", что указывает на то, что диск находится в надежном состоянии. Температура также находится в пределах нормы.</p>
-        <p style={{ marginBottom: "10px", fontWeight: "600", fontSize: "21px"}}>Запуск краткого самодиагностического теста:</p>
+        <p style={{ marginBottom: "10px", fontWeight: "600", fontSize: "21px", color: "#DFECB2"}}>Запуск краткого самодиагностического теста:</p>
         <img className="content__img" src={smartmontools_2_img} width="550px" alt="Img" />
         <p style={{ marginBottom: "20px"}}>
         Команда smartctl -t short /dev/nvme0n1 предполагает запуск краткого самодиагностического теста 
@@ -76,7 +84,7 @@ function Content({ toggle }) {
         Вы уже проверили общее состояние вашего диска с помощью smartctl -a /dev/nvme0n1, и он показал 
         "PASSED", что означает, что ваш диск в целом находится в хорошем состоянии.
         </p>
-        <p style={{ marginBottom: "10px", fontWeight: "600", fontSize: "21px"}}>Отображение журнала самодиагностики:</p>
+        <p style={{ marginBottom: "10px", fontWeight: "600", fontSize: "21px", color: "#DFECB2"}}>Отображение журнала самодиагностики:</p>
         <img className="content__img" src={smartmontools_3_img} width="550px" alt="Img" />
         <p style={{ marginBottom: "20px"}}>
         Команда smartctl -l selftest /dev/nvme0n1 также вызывает ошибку "Invalid Field in Command (0x2002)". 
@@ -87,7 +95,7 @@ function Content({ toggle }) {
         вы все равно можете мониторить состояние вашего диска с
         помощью общей информации, предоставленной командой smartctl -a /dev/nvme0n1
         </p>
-        <p style={{ marginBottom: "10px", fontWeight: "600", fontSize: "21px"}}>Создание отчёта:</p>
+        <p style={{ marginBottom: "10px", fontWeight: "600", fontSize: "21px", color: "#DFECB2"}}>Создание отчёта:</p>
         <img className="content__img" src={smartmontools_4_img} width="550px" alt="Img" />
         <p style={{ marginBottom: "20px"}}>
         Данная команда выполняет чтение информации S.M.A.R.T. с вашего NVMe SSD
