@@ -12,13 +12,22 @@ import smartmontools_2_img from '../../assets/smartmontools/2.png'
 import smartmontools_3_img from '../../assets/smartmontools/3.png'
 import smartmontools_4_img from '../../assets/smartmontools/4.png'
 import smartmontools_5_img from '../../assets/smartmontools/5.png'
+import smartmontools_6_img from '../../assets/smartmontools/6.png'
+import smartmontools_7_img from '../../assets/smartmontools/7.png'
+import smartmontools_e1_img from '../../assets/smartmontools/e1.png'
+import smartmontools_e2_img from '../../assets/smartmontools/e2.png'
+import smartmontools_e3_img from '../../assets/smartmontools/e3.png'
 import smartmontools_screen from '../../assets/smartmontools/screen_with_date.png'
 
 import gsmartcontrol_1_img from '../../assets/gsmartcontrol/1.png'
 import gsmartcontrol_2_img from '../../assets/gsmartcontrol/2.png'
 import gsmartcontrol_3_img from '../../assets/gsmartcontrol/3.png'
+import gsmartcontrol_e1_img from '../../assets/gsmartcontrol/e1.png'
+import gsmartcontrol_e2_img from '../../assets/gsmartcontrol/e2.png'
+import gsmartcontrol_screen from '../../assets/gsmartcontrol/screen_with_date.png'
 
 import hddtemp_1_img from '../../assets/hddtemp/1.png'
+import hddtemp_screen from '../../assets/hddtemp/screen_with_date.png'
 
 function Content({ toggle }) {
 
@@ -45,9 +54,8 @@ function Content({ toggle }) {
         </p>
         <p style={{color: "#A0F9D3", fontSize: "17px"}}>
         Сайт: 
-        <a style={{ color: "#DFF7ED" }} href="https://www.smartmontools.org" target="_blank" rel="noopener noreferrer"> https://www.smartmontools.org</a>
+        <a style={{ color: "#DFF7ED" }} href="https://www.smartmontools.org" target="_blank" rel="noopener noreferrer"> smartmontools.org</a>
         </p>  
-        {/* <hr class="content__separator" /> */}
         <div class="content__separator">
             <hr />
             <span class="separator-text">Основные пункты</span>
@@ -108,7 +116,8 @@ function Content({ toggle }) {
         помощью общей информации, предоставленной командой smartctl -a /dev/nvme0n1
         </p>
         <p className="content__header__2">Создание отчёта</p>
-        <img className="content__img" src={smartmontools_4_img} width="550px" alt="Img" />
+        <img className="content__img" src={smartmontools_6_img} width="600px" alt="Img" />
+        <img className="content__img" src={smartmontools_7_img} width="600px" alt="Img" />
         <p className="content__text">
         Данная команда выполняет чтение информации S.M.A.R.T. с вашего NVMe SSD
         с использованием smartctl и записывает эту информацию в файл smart_report.txt, 
@@ -118,15 +127,47 @@ function Content({ toggle }) {
             <hr />
             <span class="separator-text">Эксперименты</span>
         </div>
+        <p className="content__header__2">Планирование тестов</p>
+        <img className="content__img" src={smartmontools_e1_img} width="600px" alt="Img" />
+        <p className="content__text">
+        Вы можете запланировать тесты для выполнения в будущем.
+        Например, для планирования долгого теста каждые день нужно использовать комманду со скриншота выше.
+        </p>
+        <p className="content__header__2">Использование скриптов</p>
+        <img className="content__img" src={smartmontools_e2_img} width="600px" alt="Img" />
+        <img className="content__img" src={smartmontools_e3_img} width="600px" alt="Img" />
+        <p className="content__text">
+        Вы можете написать собственные скрипты для автоматизации мониторинга.
+        Например, проверка статуса всех дисков.
+        </p>
         </div>
 
         <div className={toggle === 2 ? "content__show" : "content"}>
           <img className="content__logo" src={secondLogo} width="250px" alt="secondLogo" />
           <h1 className="content__header">GSmartControl</h1>
+          <p style={{ marginBottom: "10px", color: "#A0F9D3", fontSize: "17px"}}>
+          Производитель: 
+          <span style={{ color: "#DFF7ED"}}> Cообщество разработчиков. Проект является открытым исходным кодом.</span>
+          </p>
+          <p style={{color: "#A0F9D3", fontSize: "17px"}}>
+          Сайт: 
+          <a style={{ color: "#DFF7ED" }} href="https://gsmartcontrol.shaduri.dev" target="_blank" rel="noopener noreferrer"> gsmartcontrol.shaduri.dev</a>
+          </p>  
+          <div class="content__separator">
+            <hr />
+            <span class="separator-text">Основные пункты</span>
+          </div>
           <p className="content__text">
           GSmartControl - это утилита для мониторинга и анализа состояния жестких дисков.
           Она предоставляет информацию о здоровье и производительности вашего жесткого диска
           и может помочь выявить проблемы, связанные с жестким диском. Вот пример использования GSmartControl в Manjaro Linux:
+          </p>
+          <p className="content__header__2"> 
+          Образ экрана
+          </p>
+          <img className="content__img" src={gsmartcontrol_screen} width="900px" alt="Img" />
+          <p className="content__header__2"> 
+          Использование программы
           </p>
           <p className="content__text">
           После запуска GSmartControl вы увидите главное окно программы. В этом окне вы увидите список доступных жестких дисков, подключенных к вашей системе.
@@ -145,19 +186,52 @@ function Content({ toggle }) {
           <p className="content__text">
           GSmartControl также предоставляет журнал самотестирования и событий, которые могут содержать информацию 
           о предыдущих проблемах с жестким диском.
-          Вы можете просмотреть журналы, чтобы получить дополнительные сведения о состоянии вашего диска
+          Вы можете просмотреть журналы, чтобы получить дополнительные сведения о состоянии вашего диска.
           </p>  
           <img className="content__img" src={gsmartcontrol_3_img} width="800px" alt="Img" />
+          <div class="content__separator">
+            <hr />
+            <span class="separator-text">Эксперименты</span>
+          </div>
+          <p className="content__header__2">Изменение общих настроек</p>
+          <img className="content__img" src={gsmartcontrol_e1_img} width="500px" alt="Img" />
+          <p className="content__text">
+          Вы можете изменять общие настройки.
+          </p>  
+          <p className="content__header__2">Изменение настроек диска</p>
+          <img className="content__img" src={gsmartcontrol_e2_img} width="500px" alt="Img" />
+          <p className="content__text">
+          Вы можете изменять настройки дисков.
+          </p>  
         </div>
 
         <div className={toggle === 3 ? "content__show" : "content"}>
           <img className="content__logo" src={thierdLogo} width="250px" alt="thierdLogo" />
           <h1 className="content__header">HDDTemp</h1>
+          <p style={{ marginBottom: "10px", color: "#A0F9D3", fontSize: "17px"}}>
+          Производитель: 
+          <span style={{ color: "#DFF7ED"}}> Cообщество разработчиков. Проект является открытым исходным кодом.</span>
+          </p>
+          <p style={{color: "#A0F9D3", fontSize: "17px"}}>
+          Сайт: 
+          <a style={{ color: "#DFF7ED" }} href="https://wiki.archlinux.org/title/Hddtemp" target="_blank" rel="noopener noreferrer"> wiki.archlinux.org/title/Hddtemp</a>
+          </p>  
+          <div class="content__separator">
+            <hr />
+            <span class="separator-text">Основные пункты</span>
+          </div>
           <p className="content__text">
           hddtemp - это утилита для мониторинга температуры жестких дисков в Linux.
           Она позволяет вам проверить текущую температуру ваших жестких дисков.
           Вот пример использования hddtemp в Manjaro Linux с описанием:
           </p>  
+          <p className="content__header__2"> 
+          Образ экрана
+          </p>
+          <img className="content__img" src={hddtemp_screen} width="900px" alt="Img" />
+          <p className="content__header__2"> 
+          Использование программы
+          </p>
           <img className="content__img" src={hddtemp_1_img} width="550px" alt="Img" />
           <p className="content__text">
           Ошибка, которую вы видите, связана с тем,
