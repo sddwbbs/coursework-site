@@ -6,6 +6,7 @@ import animationData from '../../assets/web-designer-with-idea.json';
 import firstLogo from '../../assets/smartmontools.png';
 import secondLogo from '../../assets/internal-hard-disk-drive.png';
 import thierdLogo from '../../assets/reload-drive.png';
+import fourthLogo from '../../assets/file-roller.png'
 
 import smartmontools_1_img from '../../assets/smartmontools/1.png'
 import smartmontools_2_img from '../../assets/smartmontools/2.png'
@@ -28,6 +29,44 @@ import gsmartcontrol_screen from '../../assets/gsmartcontrol/screen_with_date.pn
 
 import hddtemp_1_img from '../../assets/hddtemp/1.png'
 import hddtemp_screen from '../../assets/hddtemp/screen_with_date.png'
+
+import fileroller_1_img from '../../assets/file-roller/. (1).png'
+import fileroller_2_img from '../../assets/file-roller/. (2).png'
+import fileroller_3_img from '../../assets/file-roller/. (3).png'
+import fileroller_4_img from '../../assets/file-roller/. (4).png'
+import fileroller_5_img from '../../assets/file-roller/. (5).png'
+import fileroller_6_img from '../../assets/file-roller/. (6).png'
+import fileroller_7_img from '../../assets/file-roller/. (7).png'
+import fileroller_8_img from '../../assets/file-roller/. (8).png'
+import fileroller_9_img from '../../assets/file-roller/. (9).png'
+import fileroller_10_img from '../../assets/file-roller/. (10).png'
+import fileroller_11_img from '../../assets/file-roller/. (11).png'
+import fileroller_12_img from '../../assets/file-roller/. (12).png'
+import fileroller_13_img from '../../assets/file-roller/. (13).png'
+import fileroller_14_img from '../../assets/file-roller/. (14).png'
+import fileroller_15_img from '../../assets/file-roller/. (15).png'
+import fileroller_16_img from '../../assets/file-roller/. (16).png'
+import fileroller_17_img from '../../assets/file-roller/. (17).png'
+import fileroller_18_img from '../../assets/file-roller/. (18).png'
+import fileroller_19_img from '../../assets/file-roller/. (19).png'
+import fileroller_20_img from '../../assets/file-roller/. (20).png'
+import fileroller_21_img from '../../assets/file-roller/. (21).png'
+import fileroller_22_img from '../../assets/file-roller/. (22).png'
+import fileroller_23_img from '../../assets/file-roller/. (23).png'
+import fileroller_24_img from '../../assets/file-roller/. (24).png'
+import fileroller_25_img from '../../assets/file-roller/. (25).png'
+import fileroller_26_img from '../../assets/file-roller/. (26).png'
+import fileroller_27_img from '../../assets/file-roller/. (27).png'
+import fileroller_28_img from '../../assets/file-roller/. (28).png'
+import fileroller_29_img from '../../assets/file-roller/. (29).png'
+import fileroller_30_img from '../../assets/file-roller/. (30).png'
+import fileroller_31_img from '../../assets/file-roller/. (31).png'
+import fileroller_32_img from '../../assets/file-roller/. (32).png'
+import fileroller_33_img from '../../assets/file-roller/. (33).png'
+import fileroller_34_img from '../../assets/file-roller/. (34).png'
+import fileroller_35_img from '../../assets/file-roller/. (35).png'
+import fileroller_36_img from '../../assets/file-roller/. (36).png'
+
 
 function Content({ toggle }) {
 
@@ -239,6 +278,38 @@ function Content({ toggle }) {
           hddtemp предназначен для мониторинга температуры жестких дисков,
           подключенных по стандартной шине SATA или IDE, и не поддерживает NVMe SSD.
           </p>  
+        </div>
+
+        <div className={toggle === 4 ? "content__show" : "content"}>
+        <img className="content__logo" src={fourthLogo} width="250px" alt="fourthLogo" />
+          <h1 className="content__header">File Roller</h1>
+          <p style={{ marginBottom: "10px", color: "#A0F9D3", fontSize: "17px"}}>
+          Производитель: 
+          <span style={{ color: "#DFF7ED"}}> Cообщество разработчиков. Проект является открытым исходным кодом.</span>
+          </p>
+          <p style={{color: "#A0F9D3", fontSize: "17px"}}>
+          Сайт: 
+          <a style={{ color: "#DFF7ED" }} href="https://wiki.gnome.org/Apps/FileRoller" target="_blank" rel="noopener noreferrer"> /wiki.gnome.org/Apps/FileRoller</a>
+          </p>  
+          <div class="content__separator">
+            <hr />
+            <span class="separator-text">Основные пункты</span>
+          </div>
+          <p className="content__header__2"> 
+          Использование программы
+          </p>
+          <p className="content__text">
+          После запуска мы видим главное окно программы, пока что оно пустое.
+          </p> 
+          <img className="content__img" src={fileroller_1_img} width="550px" alt="Img" />
+          <p className="content__text">
+          Далее у нас есть возможность открыть меню дополнительных параметров:
+          </p> 
+          <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
+          <div class="content__separator">
+            <hr />
+            <span class="separator-text">Эксперименты</span>
+          </div>
         </div>
 
     </div>
