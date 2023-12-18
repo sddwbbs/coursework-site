@@ -66,6 +66,7 @@ import fileroller_33_img from '../../assets/file-roller/. (33).png'
 import fileroller_34_img from '../../assets/file-roller/. (34).png'
 import fileroller_35_img from '../../assets/file-roller/. (35).png'
 import fileroller_36_img from '../../assets/file-roller/. (36).png'
+import fileroller_screen from '../../assets/file-roller/screen_with_date.png'
 
 
 function Content({ toggle }) {
@@ -296,16 +297,224 @@ function Content({ toggle }) {
             <span class="separator-text">Основные пункты</span>
           </div>
           <p className="content__header__2"> 
-          Использование программы
+          Образ экрана
+          </p>
+          <img className="content__img" src={fileroller_screen} width="900px" alt="Img" />
+          <p className="content__header__2"> 
+          Создание нового архива
           </p>
           <p className="content__text">
           После запуска мы видим главное окно программы, пока что оно пустое.
           </p> 
           <img className="content__img" src={fileroller_1_img} width="550px" alt="Img" />
           <p className="content__text">
-          Далее у нас есть возможность открыть меню дополнительных параметров:
+          Далее у нас есть возможность открыть меню дополнительных параметров
+          </p> 
+          <p className="content__text">Пункты меню:</p>
+          <ul style={{ marginBottom: "20px", marginLeft: "50px"}}>
+            <li>1. Создать новый архив</li>
+            <li>2. Открыть архив</li>
+            <li>3. Сохранить как</li>
+            <li>4. Создать/изменить пароль</li>
+            <li>5. Проверить целостность</li>
+            <li>6. Свойства</li>
+            <li>7. Показывать все файлы</li>
+            <li>8. Показывать в виде папок</li>
+            <li>9. Боковая панель (сайдбар)</li>
+            <li>10. Горячие клавиши</li>
+            <li>11. Справка</li>
+            <li>12. Информация о программе</li>
+          </ul>
+          <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
+          <p className="content__text">
+          В результате выбора "New Archive..." появляется следующее меню:
+          </p> 
+          <img className="content__img" src={fileroller_3_img} width="550px" alt="Img" />
+          <p className="content__text">
+          При нажатии "Other options" появляются дополнительные настройки, здесь можно установить пароль для архива:
+          </p> 
+          <img className="content__img" src={fileroller_4_img} width="550px" alt="Img" />
+          <p className="content__text">
+          Есть возможность выбрать тип архива из списка представленных, 
+          я буду рассматривать работу программы на примере .zip архива:
+          </p> 
+          <img className="content__img" src={fileroller_5_img} width="550px" alt="Img" />
+          <p className="content__text">
+          Можно выбрать директорию в которой будет создан архив:
+          </p> 
+          <img className="content__img" src={fileroller_6_img} width="550px" alt="Img" />
+          <p className="content__text">
+          </p> 
+          <img className="content__img" src={fileroller_7_img} width="550px" alt="Img" />
+          <p className="content__header__2"> 
+          Добавление файлов в архив
+          </p>
+          <p className="content__text">
+          Созданный архив появляется в сайдбаре слева:
+          </p> 
+          <img className="content__img" src={fileroller_8_img} width="550px" alt="Img" />
+          <p className="content__text">
+          При нажатии кнопки "+" открывается окно в котором можно выбрать файлы, которые будут добавлены в архив:
+          </p> 
+          <img className="content__img" src={fileroller_9_img} width="650px" alt="Img" />
+          <p className="content__text">
+          Выбранные файлы будут с зеленой галочкой:
+          </p> 
+          <img className="content__img" src={fileroller_10_img} width="650px" alt="Img" />
+          <p className="content__text">
+          При нажатии правой кнопки мыши внутри окна появляется контекстное меню, в нем можно выбрать все,
+          отменить весь выбор, поставить галочку для отображения скрытых файлов:
+          </p> 
+          <img className="content__img" src={fileroller_11_img} width="650px" alt="Img" />
+          <p className="content__text">
+          При нажатии кнопки "Options" можно загрузить настройки выбора, сохранить текущие настройки или сбросить текущие настройки: 
+          </p> 
+          <img className="content__img" src={fileroller_12_img} width="650px" alt="Img" />
+          <p className="content__text">
+          После нажатия кнопки "Add" происходит добавление файлов в архив:
+          </p> 
+          <img className="content__img" src={fileroller_13_img} width="400px" alt="Img" />
+          <p className="content__text">
+          Так выглядит главное меню после добавления файлов в архив:
+          </p> 
+          <img className="content__img" src={fileroller_14_img} width="650px" alt="Img" />
+          <p className="content__header__2"> 
+          Извлечение файлов из архива
+          </p>
+          <p className="content__text">
+          Для извлечения файлов следует нажать кнопку "Extract", так же на скриншоте видно контекстное меню,
+          появляющееся при нажатии ПКМ на любом из файлов
+          </p> 
+          <p className="content__text">Действия в контекстном меню:</p>
+          <ul style={{ marginBottom: "20px", marginLeft: "50px"}}>
+          <li>1. Открыть файл</li>
+          <li>2. Открыть с помощью</li>
+          <li>3. Извлечь конкретный файл</li>
+          <li>4. Вырезать</li>
+          <li>5. Копировать</li>
+          <li>6. Вставить</li>
+          <li>7. Переименовать</li>
+          <li>8. Удалить</li>
+        </ul>
+          <img className="content__img" src={fileroller_15_img} width="650px" alt="Img" />
+          <p className="content__text">
+          После нажатия кнопки "Extract" появляется следующее окно, 
+          в нем нужно выбрать папку, в которую будут извлечены файлы:
+          </p> 
+          <img className="content__img" src={fileroller_16_img} width="950px" alt="Img" />
+          <p className="content__text">
+          Сообщение о том, что извлчение прошло успешно:
+          </p> 
+          <img className="content__img" src={fileroller_17_img} width="350px" alt="Img" />
+          <p className="content__text">
+          Так выглядят файлы в директории после извлечения:
+          </p> 
+          <img className="content__img" src={fileroller_18_img} width="650px" alt="Img" />
+          <p className="content__header__2"> 
+          Поиск по файлам
+          </p>
+          <p className="content__text">
+          В программе реализован поиск по файлам, находящимся в архиве:
+          </p> 
+          <img className="content__img" src={fileroller_19_img} width="750px" alt="Img" />
+          <p className="content__header__2"> 
+          Открытие существующего архива
+          </p>
+          <p className="content__text">
+          Для открытия существующего архива выбираем пункт "Open..." основного меню:
           </p> 
           <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_20_img} width="950px" alt="Img" />
+          <p className="content__text">
+          Так выглядит главное окно после открытия архива:
+          </p> 
+          <img className="content__img" src={fileroller_21_img} width="650px" alt="Img" />
+          <p className="content__header__2"> 
+          Сохранение архива
+          </p>
+          <p className="content__text">
+          Для сохранения нужно выбрать пунк "Save As..." основного меню: 
+          </p> 
+          <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_22_img} width="550px" alt="Img" />
+          <p className="content__header__2"> 
+          Создание/редактирование пароля
+          </p>
+          <p className="content__text">
+          Для создания/редактирования пароля к архиву нужно выбрать пункт "Password..." основного меню:
+          </p> 
+          <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
+          <p className="content__text">
+          Окно с вводом пароля:
+          </p> 
+          <img className="content__img" src={fileroller_23_img} width="350px" alt="Img" />
+          <p className="content__text">
+          </p> 
+          <img className="content__img" src={fileroller_24_img} width="350px" alt="Img" />
+          <p className="content__text">
+          Окно с требованием ввести пароль к архиву:
+          </p> 
+          <img className="content__img" src={fileroller_25_img} width="350px" alt="Img" />
+          <p className="content__header__2"> 
+          Удаление файлов из архива
+          </p>
+          <p className="content__text">
+          Для удаления из архива нужно выделить файл (файлы), 
+          которые требуется удалить, средствами стандартного выделения:
+          </p> 
+          <img className="content__img" src={fileroller_14_img} width="650px" alt="Img" />
+          <p className="content__text">
+          Далее в контексном меню, открытом чере ПКМ, выбрать пунк "Delete" и появится следующее окно.
+          Здесь есть выбор: удалить все файлы в архиве, удалить выбранные файлы 
+          и удалить файлы с помощью фильтра (по названию или расширению):
+          </p> 
+          <img className="content__img" src={fileroller_26_img} width="350px" alt="Img" />
+          <p className="content__text">
+          Результат удаления директории "coursework-site":
+          </p> 
+          <img className="content__img" src={fileroller_27_img} width="650px" alt="Img" />
+          <p className="content__header__2"> 
+          Проверка целостности
+          </p>
+          <p className="content__text">
+          Для запуска теста на проверку целостности нужно выбрать пункт "Test integrity"
+          </p> 
+          <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_28_img} width="750px" alt="Img" />
+          <p className="content__text">
+          
+          </p> 
+          <img className="content__img" src={fileroller_29_img} width="750px" alt="Img" />
+          <p className="content__text">
+          
+          </p> 
+          <img className="content__img" src={fileroller_30_img} width="550px" alt="Img" />
+          <p className="content__text">
+          
+          </p> 
+          <img className="content__img" src={fileroller_31_img} width="550px" alt="Img" />
+          <p className="content__text">
+          
+          </p> 
+          <img className="content__img" src={fileroller_32_img} width="550px" alt="Img" />
+          <p className="content__text">
+          
+          </p> 
+          <img className="content__img" src={fileroller_33_img} width="550px" alt="Img" />
+          <p className="content__text">
+          
+          </p> 
+          <img className="content__img" src={fileroller_34_img} width="550px" alt="Img" />
+          <p className="content__text">
+          
+          </p> 
+          <img className="content__img" src={fileroller_35_img} width="550px" alt="Img" />
+          <p className="content__text">
+          
+          </p> 
+          <img className="content__img" src={fileroller_36_img} width="550px" alt="Img" />
+
+
           <div class="content__separator">
             <hr />
             <span class="separator-text">Эксперименты</span>
