@@ -1,12 +1,13 @@
-import React from 'react';
-import { useLottie } from "lottie-react";
-import './Content.css';
-import animationData from '../../assets/web-designer-with-idea.json'; 
+import React from 'react'
+import { useLottie } from "lottie-react"
+import './Content.css'
+import animationData from '../../assets/web-designer-with-idea.json'
 
-import firstLogo from '../../assets/smartmontools.png';
-import secondLogo from '../../assets/internal-hard-disk-drive.png';
-import thierdLogo from '../../assets/reload-drive.png';
+import firstLogo from '../../assets/smartmontools.png'
+import secondLogo from '../../assets/internal-hard-disk-drive.png'
+import thierdLogo from '../../assets/reload-drive.png'
 import fourthLogo from '../../assets/file-roller.png'
+import fifthLogo from '../../assets/7z.png'
 
 import smartmontools_1_img from '../../assets/smartmontools/1.png'
 import smartmontools_2_img from '../../assets/smartmontools/2.png'
@@ -78,6 +79,7 @@ import fileroller_e8_img from '../../assets/file-roller/experiments/. (8).png'
 import fileroller_e9_img from '../../assets/file-roller/experiments/. (9).png'
 import fileroller_e10_img from '../../assets/file-roller/experiments/. (10).png'
 import fileroller_e11_img from '../../assets/file-roller/experiments/. (11).png'
+
 
 
 function Content({ toggle }) {
@@ -585,6 +587,28 @@ function Content({ toggle }) {
           <img className="content__img" src={fileroller_e10_img} width="850px" alt="Img" />
           <img className="content__img" src={fileroller_e11_img} width="850px" alt="Img" />
 
+        </div>
+
+        <div className={toggle === 5 ? "content__show" : "content"}>
+          <img className="content__logo" src={fifthLogo} width="250px" alt="secondLogo" />
+          <h1 className="content__header">7-Zip</h1>
+          <p style={{ marginBottom: "10px", color: "#A0F9D3", fontSize: "17px"}}>
+          Производитель: 
+          <span style={{ color: "#DFF7ED"}}> Cообщество разработчиков. Проект является открытым исходным кодом.</span>
+          </p>
+          <p style={{color: "#A0F9D3", fontSize: "17px"}}>
+          Сайт: 
+          <a style={{ color: "#DFF7ED" }} href="https://gsmartcontrol.shaduri.dev" target="_blank" rel="noopener noreferrer"> gsmartcontrol.shaduri.dev</a>
+          </p>  
+          <div class="content__separator">
+            <hr />
+            <span class="separator-text">Основные пункты</span>
+          </div>
+          
+          <div class="content__separator">
+            <hr />
+            <span class="separator-text">Эксперименты</span>
+          </div>
         </div>
 
     </div>
