@@ -67,6 +67,17 @@ import fileroller_34_img from '../../assets/file-roller/. (34).png'
 import fileroller_35_img from '../../assets/file-roller/. (35).png'
 import fileroller_36_img from '../../assets/file-roller/. (36).png'
 import fileroller_screen from '../../assets/file-roller/screen_with_date.png'
+import fileroller_e1_img from '../../assets/file-roller/experiments/. (1).png'
+import fileroller_e2_img from '../../assets/file-roller/experiments/. (2).png'
+import fileroller_e3_img from '../../assets/file-roller/experiments/. (3).png'
+import fileroller_e4_img from '../../assets/file-roller/experiments/. (4).png'
+import fileroller_e5_img from '../../assets/file-roller/experiments/. (5).png'
+import fileroller_e6_img from '../../assets/file-roller/experiments/. (6).png'
+import fileroller_e7_img from '../../assets/file-roller/experiments/. (7).png'
+import fileroller_e8_img from '../../assets/file-roller/experiments/. (8).png'
+import fileroller_e9_img from '../../assets/file-roller/experiments/. (9).png'
+import fileroller_e10_img from '../../assets/file-roller/experiments/. (10).png'
+import fileroller_e11_img from '../../assets/file-roller/experiments/. (11).png'
 
 
 function Content({ toggle }) {
@@ -395,7 +406,7 @@ function Content({ toggle }) {
           <li>6. Вставить</li>
           <li>7. Переименовать</li>
           <li>8. Удалить</li>
-        </ul>
+          </ul>
           <img className="content__img" src={fileroller_15_img} width="650px" alt="Img" />
           <p className="content__text">
           После нажатия кнопки "Extract" появляется следующее окно, 
@@ -477,48 +488,103 @@ function Content({ toggle }) {
           Проверка целостности
           </p>
           <p className="content__text">
-          Для запуска теста на проверку целостности нужно выбрать пункт "Test integrity"
+          Для запуска теста на проверку целостности нужно выбрать пункт "Test integrity" основного меню:
           </p> 
           <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
           <img className="content__img" src={fileroller_28_img} width="750px" alt="Img" />
+          <p className="content__header__2"> 
+          Просмотр свойст
+          </p>
           <p className="content__text">
-          
+          Для просмотра свойств архива нужно выбрать пунк "Properties" основного меню:
           </p> 
+          <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
           <img className="content__img" src={fileroller_29_img} width="750px" alt="Img" />
+          <p className="content__header__2"> 
+          Изменение параметров отображения
+          </p>
           <p className="content__text">
-          
+          Для изменения параметов отображения есть 3 пункта в основном меню:
           </p> 
-          <img className="content__img" src={fileroller_30_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_30_img} width="650px" alt="Img" />
+          <img className="content__img" src={fileroller_31_img} width="650px" alt="Img" />
+          <img className="content__img" src={fileroller_32_img} width="650px" alt="Img" />
+          <p className="content__header__2"> 
+          Горячие клавиши
+          </p>
           <p className="content__text">
-          
+          Для просмотра горячих клавиш нужно выбрать пунк "Keyboard Shortcuts" основного меню:
           </p> 
-          <img className="content__img" src={fileroller_31_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_33_img} width="750px" alt="Img" />
+          <p className="content__header__2"> 
+          Справка
+          </p>
           <p className="content__text">
-          
+          Для просмотра спраки нужно выбрать пунк "Help" основного меню:
           </p> 
-          <img className="content__img" src={fileroller_32_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_34_img} width="650px" alt="Img" />
+          <p className="content__header__2"> 
+          О программе
+          </p>
           <p className="content__text">
-          
+          Для просмотра информации о программе нужно выбрать пунк "About Archive Manager" основного меню:
           </p> 
-          <img className="content__img" src={fileroller_33_img} width="550px" alt="Img" />
-          <p className="content__text">
-          
-          </p> 
-          <img className="content__img" src={fileroller_34_img} width="550px" alt="Img" />
-          <p className="content__text">
-          
-          </p> 
-          <img className="content__img" src={fileroller_35_img} width="550px" alt="Img" />
-          <p className="content__text">
-          
-          </p> 
-          <img className="content__img" src={fileroller_36_img} width="550px" alt="Img" />
-
+          <img className="content__img" src={fileroller_2_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_35_img} width="750px" alt="Img" />
+          <img className="content__img" src={fileroller_36_img} width="750px" alt="Img" />
 
           <div class="content__separator">
             <hr />
             <span class="separator-text">Эксперименты</span>
           </div>
+
+          <p className="content__header__2"> 
+          Эксперимент с различными форматами архивов
+          </p>
+          <p className="content__text">
+          Создадим несколько архивов разных форматов (.zip, .7z, .tar) и сравним их:
+          </p>
+          <img className="content__img" src={fileroller_e1_img} width="750px" alt="Img" />
+          <p className="content__text">Порядок по скорости сжатия (от самого быстрого к самому медленному):</p>
+          <ul style={{ marginBottom: "20px", marginLeft: "50px"}}>
+            <li>1. tar</li>
+            <li>2. 7z</li>
+            <li>3. zip</li>
+          </ul>
+          <p className="content__text">
+          Скорость сжатия зависит от эффективности алгоритма и от исходных данных.
+          </p>
+          <p className="content__text">
+          Рассмотрим свойства каждого архива:
+          </p>
+          <img className="content__img" src={fileroller_e2_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_e3_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_e4_img} width="550px" alt="Img" />
+          <p className="content__header__2"> 
+          Взаимодействие с помощью командной строки
+          </p>
+          <p className="content__text">
+          Команды могут быть включены в ваши сценарии 
+          для автоматизации упаковки и распаковки файлов через командную строку.
+          </p>
+          <p className="content__text">
+          Распаковка архива в директорию:
+          </p>
+          <img className="content__img" src={fileroller_e5_img} width="550px" alt="Img" />
+          <img className="content__img" src={fileroller_e6_img} width="850px" alt="Img" />
+          <p className="content__text">
+          Создание нового архива и добавление в него файла:
+          </p>
+          <img className="content__img" src={fileroller_e7_img} width="850px" alt="Img" />
+          <img className="content__img" src={fileroller_e8_img} width="850px" alt="Img" />
+          <p className="content__header__2"> 
+          Работа с большими архивами
+          </p>
+          <img className="content__img" src={fileroller_e10_img} width="850px" alt="Img" />
+          <img className="content__img" src={fileroller_e11_img} width="850px" alt="Img" />
+
         </div>
 
     </div>
