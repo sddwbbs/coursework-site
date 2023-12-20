@@ -80,6 +80,21 @@ import fileroller_e9_img from '../../assets/file-roller/experiments/. (9).png'
 import fileroller_e10_img from '../../assets/file-roller/experiments/. (10).png'
 import fileroller_e11_img from '../../assets/file-roller/experiments/. (11).png'
 
+import sevenzip_1_img from '../../assets/7z/. (1).png'
+import sevenzip_2_img from '../../assets/7z/. (2).png'
+import sevenzip_3_img from '../../assets/7z/. (3).png'
+import sevenzip_4_img from '../../assets/7z/. (4).png'
+import sevenzip_5_img from '../../assets/7z/. (5).png'
+import sevenzip_6_img from '../../assets/7z/. (6).png'
+import sevenzip_7_img from '../../assets/7z/. (7).png'
+import sevenzip_8_img from '../../assets/7z/. (8).png'
+import sevenzip_9_img from '../../assets/7z/. (9).png'
+import sevenzip_e1_img from '../../assets/7z/experiments/. (1).png'
+import sevenzip_e2_img from '../../assets/7z/experiments/. (2).png'
+import sevenzip_e3_img from '../../assets/7z/experiments/. (3).png'
+import sevenzip_e4_img from '../../assets/7z/experiments/. (4).png'
+import sevenzip_e5_img from '../../assets/7z/experiments/. (5).png'
+
 
 
 function Content({ toggle }) {
@@ -309,6 +324,12 @@ function Content({ toggle }) {
             <hr />
             <span class="separator-text">Основные пункты</span>
           </div>
+          <p className="content__text">
+          File Roller - это программа для архивации и архивного управления в 
+          графическом интерфейсе для среды рабочего стола GNOME в операционных системах Linux.
+          Она предоставляет пользователю удобный способ создания, просмотра и извлечения файлов
+          из различных архивных форматов, таких как ZIP, TAR, GZIP, и других.
+          </p> 
           <p className="content__header__2"> 
           Образ экрана
           </p>
@@ -598,17 +619,108 @@ function Content({ toggle }) {
           </p>
           <p style={{color: "#A0F9D3", fontSize: "17px"}}>
           Сайт: 
-          <a style={{ color: "#DFF7ED" }} href="https://gsmartcontrol.shaduri.dev" target="_blank" rel="noopener noreferrer"> gsmartcontrol.shaduri.dev</a>
+          <a style={{ color: "#DFF7ED" }} href="https://www.7-zip.org/" target="_blank" rel="noopener noreferrer"> www.7-zip.org</a>
           </p>  
+
           <div class="content__separator">
             <hr />
             <span class="separator-text">Основные пункты</span>
           </div>
+
+          <p className="content__text">
+          7-Zip для Linux – это бесплатная и открытая программа для архивации и сжатия файлов,
+          предоставляющая возможности сжатия и распаковки в различных форматах архивов.
+          Одной из основных особенностей 7-Zip является поддержка своего собственного формата архивов 7z,
+          обеспечивающего высокую степень сжатия данных.
+          </p> 
+
+          <p className="content__header__2"> 
+          Образ экрана
+          </p>
+          <img className="content__img" src={sevenzip_1_img} width="850px" alt="Img" />
+
+          <p className="content__header__2"> 
+          Создание архива
+          </p>
+
+          <img className="content__img" src={sevenzip_3_img} width="850px" alt="Img" />
+
+          <p className="content__header__2"> 
+          Извлечение из архива
+          </p>
+
+          <p className="content__text">
+          Извлечение в директорию, в которой находится архив:
+          </p> 
+          <img className="content__img" src={sevenzip_4_img} width="850px" alt="Img" />
+
+          <p className="content__text">
+          Извлечение в указанную директорию:
+          </p> 
+          <img className="content__img" src={sevenzip_5_img} width="850px" alt="Img" />
+
+          <p className="content__header__2"> 
+          Просмотр содержимиого
+          </p>
+
+          <p className="content__text">
+          Здесь отображаются только первые 50 строк вывода:
+          </p> 
+          <img className="content__img" src={sevenzip_6_img} width="850px" alt="Img" />
+
+          <p className="content__header__2"> 
+          Извлечение только выбранных файлов
+          </p>
+
+          <img className="content__img" src={sevenzip_7_img} width="850px" alt="Img" />
+
+          <p className="content__header__2"> 
+          Добавление файлов в существующий архив
+          </p>
+
+          <img className="content__img" src={sevenzip_8_img} width="850px" alt="Img" />
+
+          <p className="content__header__2"> 
+          Справка
+          </p>
+
+          <img className="content__img" src={sevenzip_9_img} width="850px" alt="Img" />
           
           <div class="content__separator">
             <hr />
             <span class="separator-text">Эксперименты</span>
           </div>
+
+          <p className="content__header__2"> 
+          Сравнение степени сжатия разных методов
+          </p>
+
+          <p className="content__text">
+          Оценим эффективность трех различных методов сжатия.
+          </p>
+
+          <p className="content__text">
+          1. Store (без сжатия):
+          </p>  
+          <img className="content__img" src={sevenzip_e1_img} width="750px" alt="Img" />
+
+          <p className="content__text">
+          2. BZip2:
+          </p>  
+          <img className="content__img" src={sevenzip_e2_img} width="750px" alt="Img" />
+
+          <p className="content__text">
+          3. LZMA:
+          </p>  
+          <img className="content__img" src={sevenzip_e3_img} width="750px" alt="Img" />
+
+          <p className="content__header__2"> 
+          Измерение времени сжатия и распаковки для больших фалов
+          </p>
+
+          <img className="content__img" src={sevenzip_e4_img} width="750px" alt="Img" />
+          <img className="content__img" src={sevenzip_e5_img} width="750px" alt="Img" />
+
         </div>
 
     </div>
